@@ -28,7 +28,7 @@ def fit_mnist_model(x_train, y_train, model, epochs=2, batch_size=32):
 def evaluate_mnist_model(x_test, y_test, model):
     # Introducing a deliberate error by using "accuracy" as a float, causing a failure
     loss, accuracy = model.evaluate(x_test, y_test)
-    return loss, accuracy.  # Deliberate error: remove the dot here
+    return loss, accuracy  # Deliberate error: remove the dot here
 
 # Introducing a deliberate error by using 'mse' as the loss, causing a failure
 (x_train, y_train), (x_test, y_test) = get_mnist_data()
